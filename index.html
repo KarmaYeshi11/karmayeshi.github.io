@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>potfilo</title>
+</head>
+<script>
+ function updateDateTime() {
+ var currentDate = new Date();
+ var dateElement = document.getElementById("date");
+var timeElement = document.getElementById("time");
+
+// Format the date
+ var options = { year: 'numeric', month: 'long', day: 'numeric' };
+ var formattedDate = currentDate.toLocaleDateString(undefined, options);
+
+// Format the time
+ var formattedTime = currentDate.toLocaleTimeString();
+
+ // Update the HTML elements
+ dateElement.innerHTML = formattedDate;
+timeElement.innerHTML = formattedTime;
+ }
+
+ // Update the date and time every second
+ setInterval(updateDateTime, 1000);
+ </script>
+<style>
+	*{
+	margin: 0;
+	padding: 4px;
+    font-family: monospace;
+
+ 
+}
+header {
+	   padding: 20px;
+      text-align: center;
+       background-color: #333;
+      color: #fff;
+    }
+footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+   }
+ul{
+list-style: none;
+background: black;
+padding: 20px;
+}
+ul li{
+	display: inline-block;
+	position: revert;
+	
+}
+ul li a {
+	display: block;
+	
+	color: #fff;
+	text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ul li ul.dropdown li{
+	display: block;
+}
+ul li ul.dropdown{
+	width: 10%;
+background: black;
+position: absolute;
+z-index: 999;
+display: none;
+}
+ul li a:hover {
+background:red;
+}
+ul li:hover ul.dropdown{
+	display: block;
+}
+	.container {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+  }
+
+  .container img {
+    width: 500px;
+    height: auto;
+  }
+  h1{
+  	color: black;
+  	font-family: fantasy;
+
+  }
+ 
+
+
+
+  }
+
+
+ 
+
+
+
+
+
+
+</style>
+<header>
+	<ul>
+	<li><a href="index.html">	home </a></li>
+	<li><a href="">	language </a>
+<ul class=dropdown>
+<li><a href="">	html</a></li>
+<li><a href="">	css </a></li>
+<li><a href="">	java </a></li>
+
+</ul>
+</li>
+<li><a href="">	services</a></li>
+<li><a href="kar.html">	contact</a></li>
+<li><a href="">blog</a>
+</ul> 
+</header>
+<body>
+	<div class="container">
+  <img src="https://i.pinimg.com/474x/9c/29/13/9c2913957a53cf4c51e29b116d9ea455.jpg" alt="my Image">
+  <div>
+    <h1>karma yeshi</h1>
+    <h1>web designer</h1>
+    <p>If I am not for myself, who will be for me?.</p>
+    
+  </div>
+</div>
+<p>I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am looking for new career opportunities my current job position cannot provide.</p>
+
+	
+
+
+</body>
+<footer><div>
+	<a href="https://www.facebook.com/karma.neymaryeshi"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSry58tJEhZpYgtylK5n_5AKEs2GS4rqF_CVA&usqp=CAU" width="50px"height="50px"></a>
+	<a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV0IpmkGDuzt4_1l9Mki262MsW2jbkAIJRH9JlHX6w_CghxdbKthDSOIbgQH5WxEG5V9U&usqp=CAU" width="50px"height="50px"></a>
+	<a href=""><img src="https://media.glamour.com/photos/5cfa5d2d450ef2688b5a3f4c/1:1/w_1000,h_1000,c_limit/00-promo-insta.jpg"width="50px"height="50px"></a>
+	<a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGBSTLe_2tDC3gzpT-WHevK0nJ2GgELBSPgw&usqp=CAU"width="50px"height="50px"></a>
+	<a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSliA-u0FD-0E_TgNOK1aqpvi1Vymb47nPcug&usqp=CAU"width="50px"height="50px"></a>
+</div>
+<div class="gmap_canvas">location<iframe width="200" height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=yonpjula dsp&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100px;width:200px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100px;width:200px;}</style></div>
+<p class="pp">Date: <span id="date"></span></p>
+<p class="pp">Time: <span id="time"></span></p></div><br>
+
+&copy; 2023 My Portfolio. All rights reserved.
+		<p><marquee>"Behind every sweet smile, there is a bitter sadness that no one can see and feel."</marquee></p>
+	
+</footer>
+</html>
